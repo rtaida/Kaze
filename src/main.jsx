@@ -23,6 +23,8 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./styles.css";
+import kazeLogo from "./assets/kaze-logo.png";
+import kazeIcon from "./assets/kaze-icon.png";
 
 const API = "https://api.open-meteo.com/v1/forecast";
 const GEOCODE = "https://geocoding-api.open-meteo.com/v1/search";
@@ -664,7 +666,7 @@ function App() {
       <div className="noise" />
       <nav className="nav glass">
         <a href="#top" className="brand" aria-label="Kaze home">
-          <img className="brand-mark-image" src="/kaze-icon.png" alt="Kaze" />
+          <img className="brand-mark-image" src={kazeIcon} alt="Kaze" />
           <span>Kaze</span>
         </a>
         <div className="nav-links">
@@ -799,7 +801,7 @@ function App() {
           <div className="hero-content">
             <motion.img
               className="hero-logo"
-              src={`${import.meta.env.BASE_URL}kaze-logo.png`}
+              src={kazeLogo}
               alt="Kaze weather logo"
               initial={{ opacity: 0, scale: 0.94 }}
               animate={{ opacity: 1, scale: 1 }}
