@@ -1091,7 +1091,7 @@ function App() {
       <footer className="footer">
         <div className="footer-inner">
           <div className="brand footer-brand">
-            <img className="brand-mark-image" src="/kaze-icon.png" alt="Kaze" />
+            <img className="brand-mark-image" src={kazeIcon} alt="Kaze" />
             <span>Kaze</span>
           </div>
           <p>Weather, in motion.</p>
